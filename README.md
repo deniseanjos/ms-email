@@ -1,6 +1,6 @@
 # Microservice API - Envio de Email
 
-Projeto de microservice de envio de email.
+Projeto de microservice de envio de email utlizando H2 como banco de dados em memória.
 
 ### Materiais de Referência
 
