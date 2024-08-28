@@ -1,9 +1,9 @@
 package com.ms.email.models;
 
 import com.ms.email.enums.StatusEmail;
+import jakarta.persistence.*;
 import lombok.Data;
 
-import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
