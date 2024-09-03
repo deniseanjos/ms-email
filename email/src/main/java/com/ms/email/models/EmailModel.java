@@ -6,6 +6,7 @@ import lombok.Data;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.UUID;
 
 @Data
 @Entity
@@ -14,7 +15,7 @@ public class EmailModel implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long emailId;
+    private UUID emailId;
 
     private String ownerRef;
 
@@ -23,8 +24,8 @@ public class EmailModel implements Serializable {
     private String emailTo;
 
     private String subject;
-    @Column(columnDefinition = "TEXT") //Não limitar a coluna ao padrão de 255 caracteres
 
+    @Column(columnDefinition = "TEXT") //Não limitar a coluna ao padrão de 255 caracteres
     private String text;
 
     private LocalDateTime sendDateEmail;
